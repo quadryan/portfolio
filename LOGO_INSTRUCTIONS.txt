@@ -1,0 +1,53 @@
+# How to Add Your NUS Logos
+
+## Quick Instructions
+
+The portfolio currently has placeholder boxes for 3 logos in the header:
+1. NUS Logo
+2. NUS Computing Logo  
+3. NUS Overseas Colleges (NOC) Logo
+
+## Steps to Replace Placeholders:
+
+### Option 1: Simple Find & Replace (Easiest)
+1. Open `index.html` in any text editor (Notepad, VS Code, etc.)
+2. Search for: `<div class="placeholder-logo">NUS Logo</div>`
+3. Replace with: `<img src="nus_logo.png" alt="NUS Logo" class="uni-logo">`
+4. Search for: `<div class="placeholder-logo">NUS Computing Logo</div>`
+5. Replace with: `<img src="nus_computing_logo.png" alt="NUS Computing" class="uni-logo">`
+6. Search for: `<div class="placeholder-logo">NOC Logo</div>`
+7. Replace with: `<img src="noc_logo.png" alt="NOC" class="uni-logo">`
+8. Save the file
+
+### Option 2: I Can Do It For You
+Just upload the 3 logo files and I'll update the HTML for you!
+
+## File Naming:
+Make sure your logo files are named:
+- `nus_logo.png`
+- `nus_computing_logo.png`
+- `noc_logo.png`
+
+And place them in the same folder as index.html.
+
+---
+
+## All Changes Made:
+
+✅ **Navigation bar** added with shortcuts to all sections
+✅ **Header redesigned** with:
+   - 3 university logos (placeholder boxes for now)
+   - "Fintech | User Experience" tagline
+   - "Business Analytics Student @ NUS Computing" + "NUS Overseas Colleges Alumnus"
+   - Contact info as 3 boxes with email (📧), LinkedIn (logo), phone (📱) - all hyperlinked
+   
+✅ **Quick info updated** to show:
+   - GPA: 4.64/5.00
+   - Expected Graduation: May 2027
+   - Singapore Citizen 🇸🇬
+
+✅ **Footer simplified** with just dove, star, pray emojis (🕊️ ✨ 🙏)
+
+✅ **Accolades section** added as placeholder
+
+✅ All sections preserved exactly as before
