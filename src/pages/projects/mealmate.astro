@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+const withBase = (path) => `${import.meta.env.BASE_URL.replace(/\/?$/, '/')}${path.replace(/^\//, '')}`;
 ---
 
 <BaseLayout title="MealMate - AI Meal Planning App - Ryan Darius Lim">
@@ -34,7 +35,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
                     <!-- Add screenshots -->
                     <div class="project-image">
-                        <img src="/MealMate-landing.png" alt="MealMate landing page">
+                        <img src={withBase("MealMate-landing.png")} alt="MealMate landing page">
                     </div>
                     <p style="margin: 10px 0; color: #586069;">
                         MealMate landing page, allowing users to create a new account or login using Email+Password or Google Authentication.
@@ -42,7 +43,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
                     <br>
                     <div class="project-image">
-                        <img src="/MealMate-tracking.png" alt="MealMate dashboard showing inventory tracking">
+                        <img src={withBase("MealMate-tracking.png")} alt="MealMate dashboard showing inventory tracking">
                     </div>
                     <p style="margin: 10px 0; color: #586069;">
                         MealMate dashboard showing inventory tracking, split into nutritional balance and inventory quantities.
@@ -286,7 +287,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
                     </div>
 
                     <div style="margin-top: 40px; padding-top: 30px; border-top: 2px solid #e1e4e8;">
-                        <a href="/projects" style="color: #0366d6; font-weight: 600;">← Back to All Projects</a>
+                        <a href={withBase("projects")} style="color: #0366d6; font-weight: 600;">← Back to All Projects</a>
                     </div>
                 </div>
             </div>

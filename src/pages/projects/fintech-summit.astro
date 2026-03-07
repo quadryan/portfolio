@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+const withBase = (path) => `${import.meta.env.BASE_URL.replace(/\/?$/, '/')}${path.replace(/^\//, '')}`;
 ---
 
 <BaseLayout title="NUS Fintech Summit 2025 - Ryan Darius Lim">
@@ -8,7 +9,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
             <div class="project-card">
                 <div class="project-header">
                     <div class="project-title-row">
-                        <img src="/fintech_logo.png" alt="NUS Fintech Society logo" class="project-logo">
+                        <img src={withBase("fintech_logo.png")} alt="NUS Fintech Society logo" class="project-logo">
                         <h3 class="project-title">NUS Fintech Summit 2025</h3>
                     </div>
                     <p class="project-role">Vice President | Spearheaded Business Development + Marketing</p>
@@ -61,11 +62,11 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
                     </div>
 
                     <div class="project-image">
-                        <img src="/fintech_summit-2.png" alt="NUS Fintech Summit opening day details">
+                        <img src={withBase("fintech_summit-2.png")} alt="NUS Fintech Summit opening day details">
                     </div>
 
                     <div class="project-image">
-                        <img src="/fintech_summit-1.png" alt="NUS Fintech Summit countdown design">
+                        <img src={withBase("fintech_summit-1.png")} alt="NUS Fintech Summit countdown design">
                     </div>
 
                     <div class="content-section">
@@ -123,7 +124,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
                     </div>
 
                     <div class="project-image">
-                        <img src="/fintech_summit-3.png" alt="NUS Fintech Summit panel discussion details">
+                        <img src={withBase("fintech_summit-3.png")} alt="NUS Fintech Summit panel discussion details">
                     </div>
 
                     <!-- Business Development -->
@@ -245,7 +246,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
                     </div>
 
                     <div style="margin-top: 40px; padding-top: 30px; border-top: 2px solid #e1e4e8;">
-                        <a href="/projects" style="color: #0366d6; font-weight: 600;">← Back to All Projects</a>
+                        <a href={withBase("projects")} style="color: #0366d6; font-weight: 600;">← Back to All Projects</a>
                     </div>
                 </div>
             </div>

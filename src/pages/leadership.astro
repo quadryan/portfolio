@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+const withBase = (path) => `${import.meta.env.BASE_URL.replace(/\/?$/, '/')}${path.replace(/^\//, '')}`;
 ---
 
 <BaseLayout title="Leadership - Ryan Darius Lim">
@@ -14,7 +15,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             <div class="experience-grid">
                 <div class="experience-card">
                     <div class="exp-header">
-                        <img src="/fintech_logo.png" alt="NUS Fintech Society logo" class="company-logo">
+                        <img src={withBase("fintech_logo.png")} alt="NUS Fintech Society logo" class="company-logo">
                         <div class="exp-details">
                             <div class="exp-title">Vice President</div>
                             <div class="exp-company">NUS Fintech Society (NFS)</div>
@@ -30,7 +31,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
                 <div class="experience-card">
                     <div class="exp-header">
-                        <img src="/nus-global.png" alt="NUS Global logo" class="company-logo">
+                        <img src={withBase("nus-global.png")} alt="NUS Global logo" class="company-logo">
                         <div class="exp-details">
                             <div class="exp-title">Global Exchange Buddy</div>
                             <div class="exp-company">NUS Global Relations Office</div>
@@ -46,7 +47,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
                 <div class="experience-card">
                     <div class="exp-header">
-                        <img src="/saf-logo.png" alt="SAF logo" class="company-logo">
+                        <img src={withBase("saf-logo.png")} alt="SAF logo" class="company-logo">
                         <div class="exp-details">
                             <div class="exp-title">Brigade Signal Officer (Lieutenant)</div>
                             <div class="exp-company">Singapore Armed Forces</div>
