@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+const withBase = (path) => `${import.meta.env.BASE_URL.replace(/\/?$/, '/')}${path.replace(/^\//, '')}`;
 ---
 
 <BaseLayout title="Experience - Ryan Darius Lim">
@@ -14,7 +15,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
                 <!-- Airwallex -->
                 <div class="experience-card">
                     <div class="exp-header">
-                        <img src="/airwallex_logo.png" alt="Airwallex logo" class="company-logo">
+                        <img src={withBase("airwallex_logo.png")} alt="Airwallex logo" class="company-logo">
                         <div class="exp-details">
                             <div class="exp-title">AI Strategy Intern <span class="status-badge">Commencing Soon</span></div>
                             <div class="exp-company">Airwallex</div>
@@ -29,7 +30,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
                 <!-- Shopee -->
                 <div class="experience-card">
                     <div class="exp-header">
-                        <img src="/shopee_logo.png" alt="Shopee logo" class="company-logo">
+                        <img src={withBase("shopee_logo.png")} alt="Shopee logo" class="company-logo">
                         <div class="exp-details">
                             <div class="exp-title">Operations Business Analyst Intern</div>
                             <div class="exp-company">Shopee (Sea Group)</div>
@@ -52,7 +53,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
                 <!-- Kleep AI -->
                 <div class="experience-card">
                     <div class="exp-header">
-                        <img src="/kleep_logo.png" alt="Kleep logo" class="company-logo">
+                        <img src={withBase("kleep_logo.png")} alt="Kleep logo" class="company-logo">
                         <div class="exp-details">
                             <div class="exp-title">Founders' Associate, Product and Operations</div>
                             <div class="exp-company">Kleep AI</div>
@@ -75,7 +76,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
                 <!-- Munich Re -->
                 <div class="experience-card">
                     <div class="exp-header">
-                        <img src="/munich_re_logo.png" alt="Munich Re logo" class="company-logo">
+                        <img src={withBase("munich_re_logo.png")} alt="Munich Re logo" class="company-logo">
                         <div class="exp-details">
                             <div class="exp-title">Business Analyst Intern</div>
                             <div class="exp-company">Munich Re / Münchener Rück</div>
@@ -98,7 +99,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
                 <!-- AIA -->
                 <div class="experience-card">
                     <div class="exp-header">
-                        <img src="/aia_logo.png" alt="AIA logo" class="company-logo">
+                        <img src={withBase("aia_logo.png")} alt="AIA logo" class="company-logo">
                         <div class="exp-details">
                             <div class="exp-title">Business Underwriting & Portfolio Management Trainee</div>
                             <div class="exp-company">AIA</div>

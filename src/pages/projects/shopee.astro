@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+const withBase = (path) => `${import.meta.env.BASE_URL.replace(/\/?$/, '/')}${path.replace(/^\//, '')}`;
 ---
 
 <BaseLayout title="Shopee Returns & Refunds UX - Ryan Darius Lim">
@@ -8,7 +9,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
             <div class="project-card">
                 <div class="project-header">
                     <div class="project-title-row">
-                        <img src="/shopee_logo.png" alt="Shopee logo" class="project-logo">
+                        <img src={withBase("shopee_logo.png")} alt="Shopee logo" class="project-logo">
                         <h3 class="project-title">Shopee - Returns & Refunds UX</h3>
                     </div>
                     <p class="project-role">Operations Business Analyst Intern</p>
@@ -29,7 +30,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
                     </div>
 
                     <div class="project-image">
-                        <img src="/shopee_order.png" alt="Shopee returns and refunds entry points">
+                        <img src={withBase("shopee_order.png")} alt="Shopee returns and refunds entry points">
                     </div>
 
                     <p style="margin: 10px 0; color: #586069;">
@@ -154,7 +155,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
                     </div>
 
                     <div style="margin-top: 40px; padding-top: 30px; border-top: 2px solid #e1e4e8;">
-                        <a href="/projects" style="color: #0366d6; font-weight: 600;">← Back to All Projects</a>
+                        <a href={withBase("projects")} style="color: #0366d6; font-weight: 600;">← Back to All Projects</a>
                     </div>
                 </div>
             </div>
