@@ -53,7 +53,7 @@ portfolio-astro/
 │   │   │   ├── shopee.astro    # (to be created)
 │   │   │   ├── fintech-summit.astro # (to be created)
 │   │   │   └── mealmate.astro  # (to be created)
-│   │   ├── skills.astro        # (to be created)
+│   │   ├── leadership.astro    # Skills & Leadership
 │   │   ├── accolades.astro     # (to be created)
 │   │   └── about.astro         # (to be created)
 │   └── styles/
@@ -80,7 +80,7 @@ site: 'https://yourusername.github.io'
 
 ### Step 3: Create Remaining Pages
 I've created the core structure. You still need to create:
-- `src/pages/skills.astro` - Skills & Leadership page
+- `src/pages/leadership.astro` - Skills & Leadership page
 - `src/pages/accolades.astro` - Accolades & Recognition
 - `src/pages/about.astro` - About, Volunteering, Interests
 - `src/pages/projects/shopee.astro` - Shopee UX case study
@@ -98,7 +98,7 @@ I can help you create these! Just let me know.
 - `/projects/shopee` - Shopee UX case study (to be created)
 - `/projects/fintech-summit` - NUS Fintech Summit (to be created)
 - `/projects/mealmate` - MealMate app (to be created)
-- `/skills` - Skills & Leadership (to be created)
+- `/leadership` - Skills & Leadership
 - `/accolades` - Accolades & Recognition (to be created)
 - `/about` - About & Volunteering (to be created)
 
@@ -150,7 +150,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 - ⏳ Shopee case study (template ready, needs content)
 - ⏳ Fintech Summit case study (template ready, needs content)
 - ⏳ MealMate project page (template ready, needs content)
-- ⏳ Skills & Leadership page
+- ✅ Skills & Leadership page
 - ⏳ Accolades page
 - ⏳ About page
 
